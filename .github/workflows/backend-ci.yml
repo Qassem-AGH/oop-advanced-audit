@@ -21,6 +21,9 @@ jobs:
       - name: Restore
         run: dotnet restore Starter.slnx
 
+      - name: Check formatting
+        run: dotnet format Starter.slnx --verify-no-changes --no-restore
+
       - name: Build
         run: dotnet build Starter.slnx --no-restore --configuration Release
 
