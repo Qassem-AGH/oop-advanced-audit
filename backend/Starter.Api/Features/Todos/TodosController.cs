@@ -7,7 +7,7 @@ namespace Starter.Api.Features.Todos;
 [ApiController]
 [Route("api/todos")]
 public sealed class TodosController(TodoService service) : ControllerBase
-{
+{     
     [HttpGet]
     public async Task<ActionResult<IReadOnlyList<TodoResponse>>> List(CancellationToken cancellationToken)
     {
