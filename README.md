@@ -65,4 +65,3 @@ first exercise of the course.
 | GET | `/api/todos` | `200` list of todos |
 | POST | `/api/todos` | `201` created todo, `400` if the title is empty or too long |
 | PUT | `/api/todos/{id}/done` | `200` updated todo, `404` if it doesn't exist |
-test
